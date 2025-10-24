@@ -1,10 +1,17 @@
 /* I am using these style sheet in all the pages so that some elements like nav bar, footer remain consistent in all the pages */
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   font-family: Verdana, sans-serif;
   background: #f8f9fa;
   color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
 
 header {
@@ -81,7 +88,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px 10px;
-  margin-top: 60px;
   font-size: 0.9rem;
-  box-shadow: 0 -2px 6px rg
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
 }
