@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #f8f9fa;
+}
+
+.about {
+  text-align: center;
+  padding: 50px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.member {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+footer {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,87 @@
+/* I am using these style sheet in all the pages so that some elements like nav bar, footer remain consistent in all the pages */
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  padding: 12px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  height: 45px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  background: none !important;
+  box-shadow: none !important;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  border-bottom: 2px solid #ffffff;
+  color: #e3e3e3;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rg
+}

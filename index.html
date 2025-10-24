@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderLust - Home</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="./images/wanderlustlogo.png" alt="WanderLust Logo" class="logo">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="listings.html">Explore</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookings.html">My Bookings</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Unique Stays Worldwide 🌍</h1>
+      <p>Find your perfect getaway — from beachside resorts to city apartments.</p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="destination" placeholder="Destination">
+      <input type="date" id="checkin">
+      <input type="date" id="checkout">
+      <select id="guests">
+        <option value="">Guests</option>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Stays</h2>
+    <div class="card-container">
+      <div class="card" onclick="viewProperty('hotel1')">
+        <img src="images/hotel1.jpg" alt="Ocean View Resort">
+        <h3>Ocean View Resort</h3>
+        <p>New South Wales, Australia • $120/night</p>
+      </div>
+
+      <div class="card" onclick="viewProperty('hotel2')">
+        <img src="images/hotel2.avif" alt="Mountain Retreat">
+        <h3>Mountain Retreat</h3>
+        <p>Kathmandu, Nepal • $150/night</p>
+      </div>
+
+      <div class="card" onclick="viewProperty('hotel3')">
+        <img src="images/hotel3.jpg" alt="City Lights Apartment">
+        <h3>City Lights Apartment</h3>
+        <p>Tokyo, Japan • $100/night</p>
+      </div>
+    </div>
+
+    <div class="explore-btn">
+      <a href="listings.html" class="btn">View All Listings</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WanderLust. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

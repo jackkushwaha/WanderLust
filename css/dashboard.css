@@ -1,0 +1,128 @@
+.dashboard-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: #0077cc;
+  border-left: 4px solid #0077cc;
+  padding-left: 10px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input,
+.form-card textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+.form-card button {
+  background: #0077cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  background: #005fa3;
+}
+
+.list-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-card h2 {
+  margin-bottom: 20px;
+  color: #0077cc;
+  border-left: 4px solid #0077cc;
+  padding-left: 10px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.property-card {
+  background: #f4faff;
+  border: 1px solid #d0e4f7;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.property-card h3 {
+  margin: 5px 0;
+  color: #0077cc;
+}
+
+.property-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.property-card .price {
+  color: #00994d;
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .form-card,
+  .list-card {
+    padding: 20px;
+  }
+}

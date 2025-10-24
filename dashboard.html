@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Host Dashboard - WanderLust</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="./images/wanderlustlogo.png" alt="WanderLust Logo" class="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Explore</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="bookings.html">My Bookings</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Host Dashboard</h1>
+      <p>Manage your properties and add new listings below.</p>
+    </div>
+
+    <div class="form-card">
+      <h2>Add New Property</h2>
+      <form id="addPropertyForm">
+        <input type="text" id="propertyName" placeholder="Property Name" required>
+        <input type="text" id="propertyLocation" placeholder="Location" required>
+        <input type="text" id="propertyPrice" placeholder="Price per Night" required>
+        <textarea id="propertyDesc" rows="3" placeholder="Short Description" required></textarea>
+        <button type="submit">Add Property</button>
+      </form>
+    </div>
+
+    <div class="list-card">
+      <h2>Your Listed Properties</h2>
+      <div id="propertyList" class="property-grid">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WanderLust. All rights reserved.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
